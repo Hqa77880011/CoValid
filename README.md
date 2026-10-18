@@ -67,3 +67,15 @@ python -m covalid.statistics --records runs/main/covalid/records.jsonl --output 
 ```
 
 Supply --reference with a matched record file for paired differences. Resampling uses independent case IDs, or explicit cluster IDs when provided. Repeated observations from one source unit must share cluster. Zero-event bounds refer to an event in an independent cluster.
+
+## Fixed reproduction setting
+
+Finite trusted issuer/world model: member/MFA/level/color domains, lease effect window[2,3], costs/latencies and issuer availability.
+
+The checked-in entry point fixes data seeds, methods, budgets and output paths. Inspect its commands without starting any computation:
+
+```bash
+python reproduce.py --plan
+```
+
+Remove `--plan` to execute the registered pipeline in a fresh output directory. The entry point calls the existing implementation; it does not insert paper results. Installation uses the package instructions above.
